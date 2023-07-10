@@ -49,20 +49,6 @@ function countScores(people) {
       names[name] = updateScore(names, name, score);
     }
   })
-  //The main function will have the for loop
-  /*for(let indx = 0; indx < people.length; indx++){
-    let obj = people[indx];
-    //Destructure the object 
-    let { name , score } = obj;
-    let nameList = Object.keys(names);
-    //Check if the incoming name already exists in the new object
-    if(!nameList.includes(name)){
-      //Create a new key in the new object and assigns the score as it's starting value.
-      names[name] = score;
-    }else{
-      names[name] = updateScore(names, name, score);
-    }
-  }*/
 
   return names;
 }
